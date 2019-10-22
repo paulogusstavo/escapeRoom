@@ -1,0 +1,10 @@
+D:\PauloZanese\ScapeRoomProject\bin\Debug\ScapeRoomProject.exe.config
+D:\PauloZanese\ScapeRoomProject\bin\Debug\ScapeRoomProject.exe
+D:\PauloZanese\ScapeRoomProject\bin\Debug\ScapeRoomProject.pdb
+D:\PauloZanese\ScapeRoomProject\obj\Debug\ScapeRoomProject.csprojResolveAssemblyReference.cache
+D:\PauloZanese\ScapeRoomProject\obj\Debug\ScapeRoomProject.Form1.resources
+D:\PauloZanese\ScapeRoomProject\obj\Debug\ScapeRoomProject.Properties.Resources.resources
+D:\PauloZanese\ScapeRoomProject\obj\Debug\ScapeRoomProject.csproj.GenerateResource.Cache
+D:\PauloZanese\ScapeRoomProject\obj\Debug\ScapeRoomProject.exe
+D:\PauloZanese\ScapeRoomProject\obj\Debug\ScapeRoomProject.pdb
+D:\PauloZanese\ScapeRoomProject\obj\Debug\ScapeRoomProject.InserirSenha.resources
