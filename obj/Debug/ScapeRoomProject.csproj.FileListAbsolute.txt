@@ -8,3 +8,13 @@ D:\PauloZanese\ScapeRoomProject\obj\Debug\ScapeRoomProject.csproj.GenerateResour
 D:\PauloZanese\ScapeRoomProject\obj\Debug\ScapeRoomProject.exe
 D:\PauloZanese\ScapeRoomProject\obj\Debug\ScapeRoomProject.pdb
 D:\PauloZanese\ScapeRoomProject\obj\Debug\ScapeRoomProject.InserirSenha.resources
+C:\Temp\PauloZanese\escapeRoom\bin\Debug\ScapeRoomProject.exe.config
+C:\Temp\PauloZanese\escapeRoom\obj\Debug\ScapeRoomProject.exe
+C:\Temp\PauloZanese\escapeRoom\obj\Debug\ScapeRoomProject.pdb
+C:\Temp\PauloZanese\escapeRoom\bin\Debug\ScapeRoomProject.exe
+C:\Temp\PauloZanese\escapeRoom\bin\Debug\ScapeRoomProject.pdb
+C:\Temp\PauloZanese\escapeRoom\obj\Debug\ScapeRoomProject.csprojResolveAssemblyReference.cache
+C:\Temp\PauloZanese\escapeRoom\obj\Debug\ScapeRoomProject.InserirSenha.resources
+C:\Temp\PauloZanese\escapeRoom\obj\Debug\ScapeRoomProject.Properties.Resources.resources
+C:\Temp\PauloZanese\escapeRoom\obj\Debug\ScapeRoomProject.csproj.GenerateResource.Cache
+C:\Temp\PauloZanese\escapeRoom\obj\Debug\ScapeRoomProject.Home.resources

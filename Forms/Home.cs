@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace ScapeRoomProject
 {
-    public partial class Form1 : Form
+    public partial class Home : Form
     {
         private int timeLeft;
 
-        public Form1()
+        public Home()
         {
             InitializeComponent();
         }
@@ -55,7 +55,7 @@ namespace ScapeRoomProject
 
         private void desarmar01(object sender, EventArgs e)
         {
-            InserirSenha senha = new InserirSenha();
+            InserirSenha senha = new InserirSenha(01);
             senha.ShowDialog();
         }
     }

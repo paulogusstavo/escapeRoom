@@ -1,6 +1,6 @@
 ﻿namespace ScapeRoomProject
 {
-    partial class Form1
+    partial class Home
     {
         /// <summary>
         /// Required designer variable.
@@ -64,6 +64,7 @@
             this.bombTimer = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -76,6 +77,7 @@
             this.groupBox10.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox12.SuspendLayout();
+            this.groupBox13.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -375,7 +377,7 @@
             this.lbTimerBomb.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbTimerBomb.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTimerBomb.ForeColor = System.Drawing.Color.Red;
-            this.lbTimerBomb.Location = new System.Drawing.Point(20, 517);
+            this.lbTimerBomb.Location = new System.Drawing.Point(24, 510);
             this.lbTimerBomb.Name = "lbTimerBomb";
             this.lbTimerBomb.Size = new System.Drawing.Size(200, 49);
             this.lbTimerBomb.TabIndex = 13;
@@ -385,49 +387,49 @@
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(484, 500);
+            this.label3.Location = new System.Drawing.Point(6, 16);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(430, 23);
             this.label3.TabIndex = 14;
-            this.label3.Text = "label3";
+            this.label3.Text = "Resposta do modulo 01";
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(944, 500);
+            this.label4.Location = new System.Drawing.Point(597, 39);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(430, 23);
+            this.label4.Size = new System.Drawing.Size(252, 23);
             this.label4.TabIndex = 15;
             this.label4.Text = "label4";
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(941, 535);
+            this.label5.Location = new System.Drawing.Point(594, 62);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(430, 23);
+            this.label5.Size = new System.Drawing.Size(255, 23);
             this.label5.TabIndex = 17;
             this.label5.Text = "label5";
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(481, 535);
+            this.label6.Location = new System.Drawing.Point(597, 16);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(430, 23);
+            this.label6.Size = new System.Drawing.Size(271, 23);
             this.label6.TabIndex = 16;
             this.label6.Text = "label6";
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(941, 574);
+            this.label7.Location = new System.Drawing.Point(6, 62);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(430, 23);
+            this.label7.Size = new System.Drawing.Size(289, 23);
             this.label7.TabIndex = 19;
             this.label7.Text = "label7";
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(481, 574);
+            this.label8.Location = new System.Drawing.Point(6, 39);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(430, 23);
+            this.label8.Size = new System.Drawing.Size(289, 23);
             this.label8.TabIndex = 18;
             this.label8.Text = "label8";
             // 
@@ -443,26 +445,36 @@
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(20, 489);
+            this.label2.Location = new System.Drawing.Point(24, 482);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(200, 23);
             this.label2.TabIndex = 21;
             this.label2.Text = "Tempo restante:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.label8);
+            this.groupBox13.Controls.Add(this.label6);
+            this.groupBox13.Controls.Add(this.label3);
+            this.groupBox13.Controls.Add(this.label7);
+            this.groupBox13.Controls.Add(this.label4);
+            this.groupBox13.Controls.Add(this.label5);
+            this.groupBox13.Location = new System.Drawing.Point(484, 482);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(874, 248);
+            this.groupBox13.TabIndex = 22;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "Respostas";
+            // 
+            // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1425, 707);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.groupBox13);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.lbTimerBomb);
             this.Controls.Add(this.groupBox12);
             this.Controls.Add(this.groupBox11);
@@ -478,7 +490,7 @@
             this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Scape Room";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -506,6 +518,7 @@
             this.groupBox11.PerformLayout();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
+            this.groupBox13.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -524,7 +537,6 @@
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.GroupBox groupBox12;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton7;
@@ -547,6 +559,8 @@
         private System.Windows.Forms.Timer bombTimer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.GroupBox groupBox13;
     }
 }
 
