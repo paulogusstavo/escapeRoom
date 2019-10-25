@@ -7,6 +7,7 @@ using System.Linq;
 using System.Media;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows.Forms;
 
 namespace ScapeRoomProject
@@ -18,6 +19,7 @@ namespace ScapeRoomProject
         public Home()
         {
             InitializeComponent();
+            setupUI();
         }
                
         public void setTimer ()
@@ -53,10 +55,51 @@ namespace ScapeRoomProject
             lbTimerBomb.Click -= iniciarAtividade;
         }
 
-        private void desarmar01(object sender, EventArgs e)
+
+        private void desarmarModulo(object sender, EventArgs e)
         {
-            InserirSenha senha = new InserirSenha(01);
+            var button = (Button)sender;
+            int modulo = Int32.Parse(button.Name.Split('_')[1]);
+
+            InserirSenha senha = new InserirSenha(modulo);
             senha.ShowDialog();
         }
+
+        private void setupUI ()
+        {
+            foreach (var pb in this.Controls.OfType<PictureBox>())
+            {
+                pb.Image = Image.FromFile("C:\\Temp\\PauloZanese\\escapeRoom\\Assets\\red.png");
+            }
+
+            status_01.Image = Image.FromFile("C:\\Temp\\PauloZanese\\escapeRoom\\Assets\\red.png");
+
+        }
+
+
+        private async void Blink()
+        {
+            while (true)
+            {
+                await Task.Delay(500);
+                label1.BackColor = label1.BackColor == Color.Red ? Color.Green : Color.Red;
+            }
+        }
+
+        static async Task MainAsync(Object sender)
+        {
+            var imagem = (PictureBox)sender;
+            while (true)
+            {
+                await Task.Delay(500);
+                if (imagem.Image.Equals("red.png"))
+                    imagem.Image = null;
+                else
+                    imagem.Image = Image.FromFile("C:\\Temp\\PauloZanese\\escapeRoom\\Assets\\red.png");
+            }     
+
+        }
+
+      
     }
 }
