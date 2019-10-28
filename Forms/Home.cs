@@ -24,8 +24,8 @@ namespace ScapeRoomProject
                
         public void setTimer ()
         {
-            int hours = 1;
-            int minutes = 00;
+            int hours = 0;
+            int minutes = 60;
             int seconds = 00;
             timeLeft = (hours * 3600) + (minutes * 60) + seconds;
 
@@ -39,7 +39,10 @@ namespace ScapeRoomProject
             {
                 timeLeft = timeLeft - 1;
                 var timespan = TimeSpan.FromSeconds(timeLeft);
-                lbTimerBomb.Text = timespan.ToString(@"hh\:mm\:ss");
+                lbTimerBomb.Text = timespan.ToString(@"mm\:ss");
+
+                if (timeLeft == 1800)
+                    exibirMensagem(2);
             }
             else
             {
@@ -49,8 +52,20 @@ namespace ScapeRoomProject
             }
         }
 
+        private void exibirMensagem (int parte)
+        {
+            if (parte == 1) //Inicio da atividade
+            {
+
+            } else if (parte == 2) { //Meio do vídeo
+
+            }
+        }
+
+
         private void iniciarAtividade(object sender, EventArgs e)
         {
+            exibirMensagem(1);
             setTimer();
             lbTimerBomb.Click -= iniciarAtividade;
         }
@@ -67,11 +82,6 @@ namespace ScapeRoomProject
 
         private void setupUI ()
         {
-            foreach (var pb in this.Controls.OfType<PictureBox>())
-            {
-                pb.Image = Image.FromFile("C:\\Temp\\PauloZanese\\escapeRoom\\Assets\\red.png");
-            }
-
             status_01.Image = Image.FromFile("C:\\Temp\\PauloZanese\\escapeRoom\\Assets\\red.png");
 
         }
