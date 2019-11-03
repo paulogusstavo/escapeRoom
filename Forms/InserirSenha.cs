@@ -13,11 +13,14 @@ namespace ScapeRoomProject
     public partial class InserirSenha : Form
     {
         private int modulo;
+        private Session session;
 
         public InserirSenha(int modulo)
         {
             InitializeComponent();
             this.modulo = modulo;
+            this.session = Session.Instance;
+            setupUI();
         }
 
         private void cancelar(object sender, EventArgs e)
@@ -27,8 +30,12 @@ namespace ScapeRoomProject
 
         private void validarSenha(object sender, EventArgs e)
         {
-            if (tbSenha.Text.Equals("paulo"))
+            String senha = session.getSenha(this.modulo);
+
+            if (tbSenha.Text.Equals(senha))
             {
+                Home home = (Home)this.Owner;
+                home.mostrarResposta(this.modulo);
                 this.Dispose();
             }
             else
@@ -41,6 +48,12 @@ namespace ScapeRoomProject
         private void removeStatus(object sender, KeyPressEventArgs e)
         {
             lbStatus.Visible = false;
+        }
+
+        private void setupUI ()
+        {
+            btValidar.BackColor = Color.FromArgb(150, 9, 99, 12);
+            btCancelar.BackColor = Color.FromArgb(150, 176, 36, 40);
         }
     }
 }

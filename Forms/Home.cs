@@ -1,24 +1,29 @@
-﻿using System;
+﻿using ScapeRoomProject.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Forms;
+using WMPLib;
 
 namespace ScapeRoomProject
 {
     public partial class Home : Form
     {
         private int timeLeft;
+        private Session session;
 
         public Home()
         {
             InitializeComponent();
+            this.session = Session.Instance;
             setupUI();
         }
                
@@ -41,31 +46,33 @@ namespace ScapeRoomProject
                 var timespan = TimeSpan.FromSeconds(timeLeft);
                 lbTimerBomb.Text = timespan.ToString(@"mm\:ss");
 
-                if (timeLeft == 1800)
+                if (timeLeft == 3590) //1800)
                     exibirMensagem(2);
             }
             else
             {
-                bombTimer.Stop();
-                SystemSounds.Exclamation.Play();
-                MessageBox.Show("Time's up!", "Time has elapsed", MessageBoxButtons.OK);
+                bombTimer.Stop();             
             }
         }
 
         private void exibirMensagem (int parte)
         {
-            if (parte == 1) //Inicio da atividade
+            if (parte == 1)
             {
-
-            } else if (parte == 2) { //Meio do vídeo
-
+                VideoShow video = new VideoShow(parte);
+                video.ShowDialog();
+            } else if (parte == 2)
+            {
+                this.btMensagem.Visible = true;
             }
+            
         }
 
 
         private void iniciarAtividade(object sender, EventArgs e)
         {
             exibirMensagem(1);
+            executarSom();
             setTimer();
             lbTimerBomb.Click -= iniciarAtividade;
         }
@@ -76,40 +83,59 @@ namespace ScapeRoomProject
             var button = (Button)sender;
             int modulo = Int32.Parse(button.Name.Split('_')[1]);
 
-            InserirSenha senha = new InserirSenha(modulo);
-            senha.ShowDialog();
+            using (InserirSenha senha = new InserirSenha(modulo))
+            {
+                senha.ShowDialog(this);
+            }
+        }
+
+        public void mostrarResposta (int modulo)
+        {
+            string resposta = "resposta_" + modulo;
+            Label label = this.Controls.Find(resposta, true).FirstOrDefault() as Label;
+            label.Text = session.getResposta(modulo);
+            label.Visible = true;
+
+            string btName = "btDesarmar_" + modulo;
+            Button btDesarme = this.Controls.Find(btName, true).FirstOrDefault() as Button;
+            btDesarme.Enabled = false;
+
+            string statusName = "lbStatus_" + modulo;
+            Label labelDesarme = this.Controls.Find(statusName, true).FirstOrDefault() as Label;
+            labelDesarme.Text = "Desarmado".ToUpper();
+            labelDesarme.ForeColor = Color.Green;
         }
 
         private void setupUI ()
         {
-            status_01.Image = Image.FromFile("C:\\Temp\\PauloZanese\\escapeRoom\\Assets\\red.png");
-
-        }
-
-
-        private async void Blink()
-        {
-            while (true)
+            Color color = Color.FromArgb(150, 0, 0, 0);
+            foreach (var groupBox in Controls.OfType<GroupBox>())
             {
-                await Task.Delay(500);
-                label1.BackColor = label1.BackColor == Color.Red ? Color.Green : Color.Red;
+                groupBox.BackColor = color;
             }
+            lbTimerBomb.BackColor = color;
         }
 
-        static async Task MainAsync(Object sender)
+        private void executarSom ()
         {
-            var imagem = (PictureBox)sender;
-            while (true)
+            var file = $"{Path.GetTempPath()}temp2.mp3";
+            if (!File.Exists(file))
             {
-                await Task.Delay(500);
-                if (imagem.Image.Equals("red.png"))
-                    imagem.Image = null;
-                else
-                    imagem.Image = Image.FromFile("C:\\Temp\\PauloZanese\\escapeRoom\\Assets\\red.png");
-            }     
-
+                using (Stream output = new FileStream(file, FileMode.Create))
+                {
+                    output.Write(Properties.Resources.musicaFundo, 0, Properties.Resources.musicaFundo.Length);
+                }
+            }
+            var wmp = new WindowsMediaPlayer { URL = file };
+            wmp.controls.play();
         }
 
-      
+        private void verMensagem(object sender, EventArgs e)
+        {
+            VideoShow video = new VideoShow(2);
+            video.ShowDialog();
+            btMensagem.Visible = false;
+            executarSom();
+        }
     }
 }

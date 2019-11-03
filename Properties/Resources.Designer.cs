@@ -19,7 +19,7 @@ namespace ScapeRoomProject.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -63,10 +63,30 @@ namespace ScapeRoomProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap fundo {
+        internal static System.Drawing.Bitmap imagemFundo {
             get {
-                object obj = ResourceManager.GetObject("fundo", resourceCulture);
+                object obj = ResourceManager.GetObject("imagemFundo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] musicaFundo {
+            get {
+                object obj = ResourceManager.GetObject("musicaFundo", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] video_1 {
+            get {
+                object obj = ResourceManager.GetObject("video_1", resourceCulture);
+                return ((byte[])(obj));
             }
         }
     }

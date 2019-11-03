@@ -60,6 +60,7 @@
             // btCancelar
             // 
             this.btCancelar.BackColor = System.Drawing.Color.Firebrick;
+            this.btCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btCancelar.ForeColor = System.Drawing.Color.White;
             this.btCancelar.Location = new System.Drawing.Point(25, 122);
             this.btCancelar.Name = "btCancelar";
@@ -87,7 +88,7 @@
             this.lbStatus.Name = "lbStatus";
             this.lbStatus.Size = new System.Drawing.Size(332, 23);
             this.lbStatus.TabIndex = 4;
-            this.lbStatus.Text = "ACESSO NÃO PERMITIDO";
+            this.lbStatus.Text = "SENHA INCORRETA";
             this.lbStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbStatus.Visible = false;
             // 
@@ -103,6 +104,7 @@
             this.Controls.Add(this.btCancelar);
             this.Controls.Add(this.btValidar);
             this.Controls.Add(this.tbSenha);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "InserirSenha";
