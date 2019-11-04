@@ -63,9 +63,18 @@ namespace ScapeRoomProject
                 video.ShowDialog();
             } else if (parte == 2)
             {
+                System.Timers.Timer aTimer = new System.Timers.Timer(500);
+                aTimer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
+                aTimer.Enabled = true;
+                
                 this.btMensagem.Visible = true;
             }
             
+        }
+
+        void OnTimedEvent(object source, ElapsedEventArgs e)
+        {
+            btMensagem.BackColor = btMensagem.BackColor == Color.Red ? Color.Black : Color.Red;
         }
 
 
@@ -118,7 +127,7 @@ namespace ScapeRoomProject
 
         private void executarSom ()
         {
-            var file = $"{Path.GetTempPath()}temp2.mp3";
+            var file = $"{Path.GetTempPath()}temp.mp3";
             if (!File.Exists(file))
             {
                 using (Stream output = new FileStream(file, FileMode.Create))

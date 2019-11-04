@@ -52,8 +52,10 @@ namespace ScapeRoomProject
 
         private void setupUI ()
         {
+            lbTitulo.Text = "Qual a senha do módulo ".ToUpper() + this.modulo + "?";
             btValidar.BackColor = Color.FromArgb(150, 9, 99, 12);
             btCancelar.BackColor = Color.FromArgb(150, 176, 36, 40);
+
         }
     }
 }
