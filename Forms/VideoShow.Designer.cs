@@ -40,16 +40,16 @@
             this.axWindowsMediaPlayer1.Margin = new System.Windows.Forms.Padding(0);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(800, 600);
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(600, 600);
             this.axWindowsMediaPlayer1.TabIndex = 0;
             // 
             // VideoShow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 600);
+            this.ClientSize = new System.Drawing.Size(600, 600);
             this.Controls.Add(this.axWindowsMediaPlayer1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "VideoShow";

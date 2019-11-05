@@ -39,11 +39,8 @@
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.resposta_12 = new System.Windows.Forms.Label();
             this.resposta_11 = new System.Windows.Forms.Label();
-            this.resposta_10 = new System.Windows.Forms.Label();
             this.resposta_9 = new System.Windows.Forms.Label();
             this.resposta_8 = new System.Windows.Forms.Label();
-            this.resposta_7 = new System.Windows.Forms.Label();
-            this.resposta_1 = new System.Windows.Forms.Label();
             this.resposta_2 = new System.Windows.Forms.Label();
             this.resposta_3 = new System.Windows.Forms.Label();
             this.resposta_4 = new System.Windows.Forms.Label();
@@ -184,7 +181,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(247, 28);
             this.label2.TabIndex = 21;
-            this.label2.Text = "TEMPO RESTANTE:";
+            this.label2.Text = "TEMPO RESTANTE";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox13
@@ -192,11 +189,8 @@
             this.groupBox13.BackColor = System.Drawing.Color.Transparent;
             this.groupBox13.Controls.Add(this.resposta_12);
             this.groupBox13.Controls.Add(this.resposta_11);
-            this.groupBox13.Controls.Add(this.resposta_10);
             this.groupBox13.Controls.Add(this.resposta_9);
             this.groupBox13.Controls.Add(this.resposta_8);
-            this.groupBox13.Controls.Add(this.resposta_7);
-            this.groupBox13.Controls.Add(this.resposta_1);
             this.groupBox13.Controls.Add(this.resposta_2);
             this.groupBox13.Controls.Add(this.resposta_3);
             this.groupBox13.Controls.Add(this.resposta_4);
@@ -232,17 +226,6 @@
             this.resposta_11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.resposta_11.Visible = false;
             // 
-            // resposta_10
-            // 
-            this.resposta_10.Location = new System.Drawing.Point(217, 143);
-            this.resposta_10.Margin = new System.Windows.Forms.Padding(8);
-            this.resposta_10.Name = "resposta_10";
-            this.resposta_10.Size = new System.Drawing.Size(180, 23);
-            this.resposta_10.TabIndex = 28;
-            this.resposta_10.Text = "RESPOSTA DO MODULO 10";
-            this.resposta_10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.resposta_10.Visible = false;
-            // 
             // resposta_9
             // 
             this.resposta_9.Location = new System.Drawing.Point(217, 104);
@@ -264,28 +247,6 @@
             this.resposta_8.Text = "RESPOSTA DO MODULO 08";
             this.resposta_8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.resposta_8.Visible = false;
-            // 
-            // resposta_7
-            // 
-            this.resposta_7.Location = new System.Drawing.Point(217, 26);
-            this.resposta_7.Margin = new System.Windows.Forms.Padding(8);
-            this.resposta_7.Name = "resposta_7";
-            this.resposta_7.Size = new System.Drawing.Size(180, 23);
-            this.resposta_7.TabIndex = 25;
-            this.resposta_7.Text = "RESPOSTA DO MODULO 07";
-            this.resposta_7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.resposta_7.Visible = false;
-            // 
-            // resposta_1
-            // 
-            this.resposta_1.Location = new System.Drawing.Point(21, 26);
-            this.resposta_1.Margin = new System.Windows.Forms.Padding(8);
-            this.resposta_1.Name = "resposta_1";
-            this.resposta_1.Size = new System.Drawing.Size(180, 23);
-            this.resposta_1.TabIndex = 24;
-            this.resposta_1.Text = "RESPOSTA DO MODULO 01";
-            this.resposta_1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.resposta_1.Visible = false;
             // 
             // resposta_2
             // 
@@ -881,11 +842,8 @@
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.Label resposta_12;
         private System.Windows.Forms.Label resposta_11;
-        private System.Windows.Forms.Label resposta_10;
         private System.Windows.Forms.Label resposta_9;
         private System.Windows.Forms.Label resposta_8;
-        private System.Windows.Forms.Label resposta_7;
-        private System.Windows.Forms.Label resposta_1;
         private System.Windows.Forms.Label resposta_2;
         private System.Windows.Forms.Label resposta_3;
         private System.Windows.Forms.Label resposta_4;

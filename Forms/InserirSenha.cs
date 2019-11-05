@@ -41,7 +41,6 @@ namespace ScapeRoomProject
             else
             {
                 lbStatus.Visible = true;
-                tbSenha.Text = "";
             }
         }
 

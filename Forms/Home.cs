@@ -1,14 +1,8 @@
 ﻿using ScapeRoomProject.Forms;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Media;
-using System.Text;
-using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Forms;
 using WMPLib;
@@ -46,7 +40,7 @@ namespace ScapeRoomProject
                 var timespan = TimeSpan.FromSeconds(timeLeft);
                 lbTimerBomb.Text = timespan.ToString(@"mm\:ss");
 
-                if (timeLeft == 3590) //1800)
+                if (timeLeft == 1800)
                     exibirMensagem(2);
             }
             else
@@ -100,11 +94,21 @@ namespace ScapeRoomProject
 
         public void mostrarResposta (int modulo)
         {
-            string resposta = "resposta_" + modulo;
-            Label label = this.Controls.Find(resposta, true).FirstOrDefault() as Label;
-            label.Text = session.getResposta(modulo);
-            label.Visible = true;
-
+            if (modulo != 1 && modulo != 7 && modulo != 10)
+            { // MODULOS SEM RESPOSTA.
+                string resposta = "resposta_" + modulo;
+                Label label = this.Controls.Find(resposta, true).FirstOrDefault() as Label;
+                label.Text = session.getResposta(modulo);
+                label.Visible = true;
+            } else
+            {
+                MessageBox.Show(
+                    "Você desarmou este módulo.\n Mas ... não há nenhuma pista por aqui …",
+                    "Parabéns !!!",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+            }
+           
             string btName = "btDesarmar_" + modulo;
             Button btDesarme = this.Controls.Find(btName, true).FirstOrDefault() as Button;
             btDesarme.Enabled = false;

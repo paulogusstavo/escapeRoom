@@ -125,6 +125,9 @@
     <value>..\resources\musicafundo.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="video_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\video_1.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>..\resources\video_1.mov;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="video_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\video_2.mov;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

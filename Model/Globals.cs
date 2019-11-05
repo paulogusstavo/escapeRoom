@@ -39,32 +39,32 @@ namespace ScapeRoomProject
         {
             switch (modulo)
             {
-                case 1:
-                    return "senha1";
-                case 2:
-                    return "senha2";
-                case 3:
-                    return "senha3";
-                case 4:
-                    return "senha4";
-                case 5:
-                    return "senha5";
-                case 6:
-                    return "senha6";
-                case 7:
-                    return "senha7";
-                case 8:
-                    return "senha8";
-                case 9:
-                    return "senha9";
-                case 10:
-                    return "senha10";
-                case 11:
-                    return "senha11";
-                case 12:
-                    return "senha12";
+                case 1: //FACIL
+                    return "c";
+                case 2: //MEDIO
+                    return "~qvs";
+                case 3: //MEDIO
+                    return "~pvqvs";
+                case 4: // FACIL
+                    return "p^q";
+                case 5: // DIFICIL
+                    return "(pv~qvr)^(~pvq)";
+                case 6: // DIFICIL
+                    return "~p";
+                case 7: //DIFICIL
+                    return "pv~qvr";
+                case 8: //MEDIO
+                    return "qvs";
+                case 9: //DIFICIL
+                    return "u";
+                case 10: //MEDIO
+                    return "~pvq";
+                case 11: //FACIL
+                    return "p^~q";
+                case 12: //SEQUESTRADOR
+                    return "Bruno Campagnolo";
                 default:
-                    return "";
+                    return "Erro";
             }
         }
 
@@ -72,8 +72,8 @@ namespace ScapeRoomProject
         {
             switch (modulo)
             {
-                case 1:
-                    return "resposta1";
+                case 1: //SEM RESPOSTA
+                    return ""; 
                 case 2:
                     return "resposta2";
                 case 3:
@@ -84,14 +84,14 @@ namespace ScapeRoomProject
                     return "resposta5";
                 case 6:
                     return "resposta6";
-                case 7:
-                    return "resposta7";
+                case 7: //SEM RESPOSTA
+                    return "";
                 case 8:
                     return "resposta8";
                 case 9:
                     return "resposta9";
-                case 10:
-                    return "resposta10";
+                case 10: //SEM RESPOSTA
+                    return "";
                 case 11:
                     return "resposta11";
                 case 12:

@@ -34,3 +34,7 @@ C:\Users\paulogusstavo\Desktop\escapeRoom\bin\Debug\Interop.WMPLib.dll
 C:\Users\paulogusstavo\Desktop\escapeRoom\bin\Debug\AxInterop.WMPLib.dll
 C:\Users\paulogusstavo\Desktop\escapeRoom\obj\Debug\ScapeRoomProject.exe
 C:\Users\paulogusstavo\Desktop\escapeRoom\obj\Debug\ScapeRoomProject.pdb
+C:\Users\paulogusstavo\Desktop\escapeRoom\bin\Debug\ScapeRoomProject.exe.manifest
+C:\Users\paulogusstavo\Desktop\escapeRoom\bin\Debug\ScapeRoomProject.application
+C:\Users\paulogusstavo\Desktop\escapeRoom\obj\Debug\ScapeRoomProject.exe.manifest
+C:\Users\paulogusstavo\Desktop\escapeRoom\obj\Debug\ScapeRoomProject.application
