@@ -37,14 +37,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.resposta_12 = new System.Windows.Forms.Label();
             this.resposta_11 = new System.Windows.Forms.Label();
             this.resposta_9 = new System.Windows.Forms.Label();
-            this.resposta_8 = new System.Windows.Forms.Label();
+            this.resposta_7 = new System.Windows.Forms.Label();
             this.resposta_2 = new System.Windows.Forms.Label();
             this.resposta_3 = new System.Windows.Forms.Label();
             this.resposta_4 = new System.Windows.Forms.Label();
-            this.resposta_5 = new System.Windows.Forms.Label();
+            this.resposta_1 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.btMensagem = new System.Windows.Forms.Button();
             this.bombTimer = new System.Windows.Forms.Timer(this.components);
@@ -84,6 +83,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.msgTimer = new System.Windows.Forms.Timer(this.components);
+            this.resposta_10 = new System.Windows.Forms.Label();
             this.gb_01.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.gb_2.SuspendLayout();
@@ -155,12 +155,12 @@
             // 
             // resposta_6
             // 
-            this.resposta_6.Location = new System.Drawing.Point(21, 221);
+            this.resposta_6.Location = new System.Drawing.Point(43, 170);
             this.resposta_6.Margin = new System.Windows.Forms.Padding(8);
             this.resposta_6.Name = "resposta_6";
-            this.resposta_6.Size = new System.Drawing.Size(180, 23);
+            this.resposta_6.Size = new System.Drawing.Size(82, 23);
             this.resposta_6.TabIndex = 19;
-            this.resposta_6.Text = "RESPOSTA DO MODULO 06";
+            this.resposta_6.Text = "100011001";
             this.resposta_6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.resposta_6.Visible = false;
             // 
@@ -187,14 +187,14 @@
             // groupBox13
             // 
             this.groupBox13.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox13.Controls.Add(this.resposta_12);
+            this.groupBox13.Controls.Add(this.resposta_10);
             this.groupBox13.Controls.Add(this.resposta_11);
             this.groupBox13.Controls.Add(this.resposta_9);
-            this.groupBox13.Controls.Add(this.resposta_8);
+            this.groupBox13.Controls.Add(this.resposta_7);
             this.groupBox13.Controls.Add(this.resposta_2);
             this.groupBox13.Controls.Add(this.resposta_3);
             this.groupBox13.Controls.Add(this.resposta_4);
-            this.groupBox13.Controls.Add(this.resposta_5);
+            this.groupBox13.Controls.Add(this.resposta_1);
             this.groupBox13.Controls.Add(this.resposta_6);
             this.groupBox13.ForeColor = System.Drawing.Color.White;
             this.groupBox13.Location = new System.Drawing.Point(331, 308);
@@ -204,93 +204,89 @@
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Respostas";
             // 
-            // resposta_12
-            // 
-            this.resposta_12.Location = new System.Drawing.Point(217, 221);
-            this.resposta_12.Margin = new System.Windows.Forms.Padding(8);
-            this.resposta_12.Name = "resposta_12";
-            this.resposta_12.Size = new System.Drawing.Size(180, 23);
-            this.resposta_12.TabIndex = 30;
-            this.resposta_12.Text = "RESPOSTA DO MODULO 12";
-            this.resposta_12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.resposta_12.Visible = false;
-            // 
             // resposta_11
             // 
-            this.resposta_11.Location = new System.Drawing.Point(217, 182);
+            this.resposta_11.Location = new System.Drawing.Point(141, 47);
             this.resposta_11.Margin = new System.Windows.Forms.Padding(8);
             this.resposta_11.Name = "resposta_11";
             this.resposta_11.Size = new System.Drawing.Size(180, 23);
             this.resposta_11.TabIndex = 29;
-            this.resposta_11.Text = "RESPOSTA DO MODULO 11";
+            this.resposta_11.Text = "Pavimento o próprio solo.";
             this.resposta_11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.resposta_11.Visible = false;
             // 
             // resposta_9
             // 
-            this.resposta_9.Location = new System.Drawing.Point(217, 104);
+            this.resposta_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resposta_9.Location = new System.Drawing.Point(207, 129);
             this.resposta_9.Margin = new System.Windows.Forms.Padding(8);
             this.resposta_9.Name = "resposta_9";
-            this.resposta_9.Size = new System.Drawing.Size(180, 23);
+            this.resposta_9.Size = new System.Drawing.Size(232, 23);
             this.resposta_9.TabIndex = 27;
-            this.resposta_9.Text = "RESPOSTA DO MODULO 09";
+            this.resposta_9.Text = "(Pista do Cativeiro) Aquele que ensina, ministra aulas.";
             this.resposta_9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.resposta_9.Visible = false;
             // 
-            // resposta_8
+            // resposta_7
             // 
-            this.resposta_8.Location = new System.Drawing.Point(217, 65);
-            this.resposta_8.Margin = new System.Windows.Forms.Padding(8);
-            this.resposta_8.Name = "resposta_8";
-            this.resposta_8.Size = new System.Drawing.Size(180, 23);
-            this.resposta_8.TabIndex = 26;
-            this.resposta_8.Text = "RESPOSTA DO MODULO 08";
-            this.resposta_8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.resposta_8.Visible = false;
+            this.resposta_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resposta_7.Location = new System.Drawing.Point(11, 121);
+            this.resposta_7.Margin = new System.Windows.Forms.Padding(8);
+            this.resposta_7.Name = "resposta_7";
+            this.resposta_7.Size = new System.Drawing.Size(158, 23);
+            this.resposta_7.TabIndex = 26;
+            this.resposta_7.Text = "(Pista do sequestrador) Compatriota.";
+            this.resposta_7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.resposta_7.Visible = false;
             // 
             // resposta_2
             // 
-            this.resposta_2.Location = new System.Drawing.Point(21, 65);
+            this.resposta_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resposta_2.Location = new System.Drawing.Point(12, 223);
             this.resposta_2.Margin = new System.Windows.Forms.Padding(8);
             this.resposta_2.Name = "resposta_2";
-            this.resposta_2.Size = new System.Drawing.Size(180, 23);
+            this.resposta_2.Size = new System.Drawing.Size(283, 23);
             this.resposta_2.TabIndex = 23;
-            this.resposta_2.Text = "RESPOSTA DO MODULO 02";
+            this.resposta_2.Text = "(Pista do Sequestrador) A carreira de X estava gerando inveja.";
             this.resposta_2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.resposta_2.Visible = false;
             // 
             // resposta_3
             // 
-            this.resposta_3.Location = new System.Drawing.Point(21, 104);
+            this.resposta_3.Location = new System.Drawing.Point(367, 222);
             this.resposta_3.Margin = new System.Windows.Forms.Padding(8);
             this.resposta_3.Name = "resposta_3";
-            this.resposta_3.Size = new System.Drawing.Size(180, 23);
+            this.resposta_3.Size = new System.Drawing.Size(61, 23);
             this.resposta_3.TabIndex = 22;
-            this.resposta_3.Text = "RESPOSTA DO MODULO 03";
+            this.resposta_3.Text = "11101010";
             this.resposta_3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.resposta_3.Visible = false;
             // 
             // resposta_4
             // 
-            this.resposta_4.Location = new System.Drawing.Point(21, 143);
+            this.resposta_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resposta_4.Location = new System.Drawing.Point(26, 80);
             this.resposta_4.Margin = new System.Windows.Forms.Padding(8);
             this.resposta_4.Name = "resposta_4";
-            this.resposta_4.Size = new System.Drawing.Size(180, 23);
+            this.resposta_4.Size = new System.Drawing.Size(428, 23);
             this.resposta_4.TabIndex = 21;
-            this.resposta_4.Text = "RESPOSTA DO MODULO 04";
+            this.resposta_4.Text = "(Pista do Cativeiro) Obra ou forma em que uma das dimensões não predomina sobre a" +
+    "s outras.";
             this.resposta_4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.resposta_4.Visible = false;
             // 
-            // resposta_5
+            // resposta_1
             // 
-            this.resposta_5.Location = new System.Drawing.Point(21, 182);
-            this.resposta_5.Margin = new System.Windows.Forms.Padding(8);
-            this.resposta_5.Name = "resposta_5";
-            this.resposta_5.Size = new System.Drawing.Size(180, 23);
-            this.resposta_5.TabIndex = 20;
-            this.resposta_5.Text = "RESPOSTA DO MODULO 05";
-            this.resposta_5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.resposta_5.Visible = false;
+            this.resposta_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resposta_1.Location = new System.Drawing.Point(11, 18);
+            this.resposta_1.Margin = new System.Windows.Forms.Padding(8);
+            this.resposta_1.Name = "resposta_1";
+            this.resposta_1.Size = new System.Drawing.Size(430, 23);
+            this.resposta_1.TabIndex = 20;
+            this.resposta_1.Text = "(Pista do Cativeiro) Dependência ampla e mais importante de uma habitação, destin" +
+    "ada ao uso social.";
+            this.resposta_1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.resposta_1.Visible = false;
             // 
             // label15
             // 
@@ -780,6 +776,17 @@
             this.label14.TabIndex = 37;
             this.label14.Text = "Versão: 1.0.0";
             // 
+            // resposta_10
+            // 
+            this.resposta_10.Location = new System.Drawing.Point(141, 183);
+            this.resposta_10.Margin = new System.Windows.Forms.Padding(8);
+            this.resposta_10.Name = "resposta_10";
+            this.resposta_10.Size = new System.Drawing.Size(273, 23);
+            this.resposta_10.TabIndex = 31;
+            this.resposta_10.Text = "(Pista do Sequestrador) Indivíduo do sexo masculino.";
+            this.resposta_10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.resposta_10.Visible = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -840,14 +847,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox13;
-        private System.Windows.Forms.Label resposta_12;
         private System.Windows.Forms.Label resposta_11;
         private System.Windows.Forms.Label resposta_9;
-        private System.Windows.Forms.Label resposta_8;
+        private System.Windows.Forms.Label resposta_7;
         private System.Windows.Forms.Label resposta_2;
         private System.Windows.Forms.Label resposta_3;
         private System.Windows.Forms.Label resposta_4;
-        private System.Windows.Forms.Label resposta_5;
+        private System.Windows.Forms.Label resposta_1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button btMensagem;
         private System.Windows.Forms.Label lbStatus_1;
@@ -888,6 +894,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Timer msgTimer;
+        private System.Windows.Forms.Label resposta_10;
     }
 }
 

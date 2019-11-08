@@ -73,16 +73,6 @@ namespace ScapeRoomProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] musicaFundo {
-            get {
-                object obj = ResourceManager.GetObject("musicaFundo", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
         internal static byte[] video_1 {
             get {
                 object obj = ResourceManager.GetObject("video_1", resourceCulture);

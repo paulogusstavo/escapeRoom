@@ -56,7 +56,7 @@ namespace ScapeRoomProject
                 case 8: //MEDIO
                     return "qvs";
                 case 9: //DIFICIL
-                    return "u";
+                    return "f";
                 case 10: //MEDIO
                     return "~pvq";
                 case 11: //FACIL
@@ -72,30 +72,30 @@ namespace ScapeRoomProject
         {
             switch (modulo)
             {
-                case 1: //SEM RESPOSTA
-                    return ""; 
+                case 1:
+                    return "(Pista do Cativeiro) Dependência ampla e mais importante de uma habitação, destinada ao uso social."; 
                 case 2:
-                    return "resposta2";
+                    return "(Pista do Sequestrador) A carreira de Kelly estava gerando inveja.";
                 case 3:
-                    return "resposta3";
+                    return "11101010";
                 case 4:
-                    return "resposta4";
-                case 5:
-                    return "resposta5";
+                    return "(Pista do Cativeiro) Obra ou forma em que uma das dimensões não predomina sobre as outras.";
+                case 5: //SEM RESPOSTA
+                    return "";
                 case 6:
-                    return "resposta6";
-                case 7: //SEM RESPOSTA
+                    return "100011001";
+                case 7:
+                    return "(Pista do sequestrador) Compatriota.";
+                case 8: //SEM RESPOSTA
                     return "";
-                case 8:
-                    return "resposta8";
                 case 9:
-                    return "resposta9";
-                case 10: //SEM RESPOSTA
-                    return "";
+                    return "(Pista do Cativeiro) Aquele que ensina, ministra aulas.";
+                case 10: 
+                    return "(Pista do Sequestrador) Indivíduo do sexo masculino.";
                 case 11:
-                    return "resposta11";
-                case 12:
-                    return "resposta12";
+                    return "Pavimento o próprio solo.";
+                case 12: // SEM RESPOSTA - SERA EXIBIDO ALERTA NA TELA.
+                    return "";
                 default:
                     return "";
             }

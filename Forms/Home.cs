@@ -1,8 +1,8 @@
 ﻿using ScapeRoomProject.Forms;
 using System;
 using System.Drawing;
-using System.IO;
 using System.Linq;
+using System.Media;
 using System.Timers;
 using System.Windows.Forms;
 using WMPLib;
@@ -13,11 +13,13 @@ namespace ScapeRoomProject
     {
         private int timeLeft;
         private Session session;
+        WindowsMediaPlayer wplayer;
 
         public Home()
         {
             InitializeComponent();
             this.session = Session.Instance;
+            this.wplayer = new WindowsMediaPlayer();
             setupUI();
         }
                
@@ -92,14 +94,21 @@ namespace ScapeRoomProject
             }
         }
 
-        public void mostrarResposta (int modulo)
+        public void mostrarResposta(int modulo)
         {
-            if (modulo != 1 && modulo != 7 && modulo != 10)
+            if (modulo != 5 && modulo != 8 && modulo != 12)
             { // MODULOS SEM RESPOSTA.
                 string resposta = "resposta_" + modulo;
                 Label label = this.Controls.Find(resposta, true).FirstOrDefault() as Label;
                 label.Text = session.getResposta(modulo);
                 label.Visible = true;
+            } else if (modulo == 12)
+            {
+                MessageBox.Show(
+                    "Acertou o assassino.\nIsso dá o direito de pegar a chave para sair da sala.",
+                    "Parabéns !!!",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
             } else
             {
                 MessageBox.Show(
@@ -131,24 +140,21 @@ namespace ScapeRoomProject
 
         private void executarSom ()
         {
-            var file = $"{Path.GetTempPath()}temp.mp3";
-            if (!File.Exists(file))
+            try
             {
-                using (Stream output = new FileStream(file, FileMode.Create))
-                {
-                    output.Write(Properties.Resources.musicaFundo, 0, Properties.Resources.musicaFundo.Length);
-                }
-            }
-            var wmp = new WindowsMediaPlayer { URL = file };
-            wmp.controls.play();
+                wplayer.URL = "C:\\Temp\\EscapeRoom\\musicaFundo.mp3";
+                wplayer.controls.play();
+            } catch { }
+            
         }
 
         private void verMensagem(object sender, EventArgs e)
         {
+            wplayer.controls.pause();
             VideoShow video = new VideoShow(2);
             video.ShowDialog();
             btMensagem.Visible = false;
-            executarSom();
+            wplayer.controls.play();
         }
     }
 }
